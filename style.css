@@ -1,0 +1,545 @@
+/*dalam index*/
+* {
+  box-sizing: border-box;
+}
+
+/*media screen*/
+@media only screen and (min-width: 992px) {
+.responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+       }
+.clearfix:after{padding-bottom: 25px;}
+.bodycv   {
+  width: 100%;
+  background-image: url(Fotoku.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size:35% ;
+  background-position-y:100px;
+  }
+  
+        }
+
+@media only screen  and (max-width: 991px) {
+body{width: 100%;} 
+.clearfix:after{padding-bottom: 25px;}
+.sidenav{display: contents;}
+.card{background-color: black; width: 100%;}
+.contentindex{display: contents; }
+.gallery{width: 250px;}
+.h1cv{display: none; }
+.padong{padding-bottom: 100px;}
+}
+
+
+@media only screen and (max-width: 600px) {
+   h1{font-size: 15px;}
+  .gallery{width: 250px;}
+.sidenav{ display:none;} 
+.contentindex{display: contents;}
+body .contentindex{width: 100%; right: 100px;}
+}
+
+
+
+
+
+body {
+  width: 100%;
+  height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: darkgoldenrod;
+      }
+
+      /* body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: darkgoldenrod;
+        } */
+
+
+
+.sidenav {float: left 15%;
+        height: 100%;
+        width: 15% ;
+        /* left: 10%; */
+        position: fixed;
+        /* z-index: 1; */
+        top: 0;
+        left: 0;
+        background-color: #111;
+        /* overflow-x: hidden; */
+        /* padding-right: 5px; */
+        /* padding-left: 5px; */
+      }
+
+.sidenav a {
+        color: darkgoldenrod;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+
+.sidenav a:hover {
+        background-color: darkgoldenrod;
+        color: black;
+      }
+
+
+.contentindex {
+  position: fixed;
+  float:right 75%; 
+  /* right: 75%; */
+        margin-left: 200px;
+        padding-left: 20px ;
+        margin-bottom: 50px;
+        top: 0;
+        right: 0;
+        }
+
+.card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          max-width: 300px;
+          margin: auto;
+          text-align: center;
+          color: rgb(214, 214, 214);
+        }
+
+div.gallery img {
+          width: 100%;
+          height: 100%;
+        }
+
+div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+
+.responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+
+button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color:goldenrod;
+          background-color:  #111;
+          text-align: center;
+          cursor: pointer;
+          width:auto;
+          height: auto;
+          font-size: 18px;
+          bottom: 0px;
+          
+         
+        }
+
+
+a {
+          text-decoration: none;
+          font-size: 22px;
+          color: rgb(255, 255, 255);
+        }
+
+        /* a {
+          text-decoration: none;
+          font-size: 22px;
+          color: rgb(255, 255, 255);
+        } */
+
+button:hover, a:hover {
+          opacity: 0.7;
+         
+        }
+        
+.clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+
+/*dalam cv*/
+.logoKu{
+  position:fixed;
+  left:0px;
+  top:0px;
+  background-color: black;
+  height: 100%;
+  border-top-right-radius: 8%;
+  
+}
+
+.logoKu h1{
+  position:absolute;
+  left:150px;
+  top:20px;
+  width:500px;
+  background-color: black;
+  color:darkgoldenrod;
+  /* height: 60px; */
+}
+
+.logoKu p{
+  text-align: center;
+  background-color: black;
+  color: darkgoldenrod;
+  border-radius: 100%;
+}
+
+.contentcv {
+  margin-top: 110px;
+  margin-left: 200px;
+  height:90%;
+  width: 84%;
+  color: black;
+  background-repeat: no-repeat;
+  background-position: right;
+  position:sticky;
+}
+
+td{
+  font-size: large;
+}
+
+
+
+Section img{
+border-radius: 100%;
+border: 7px solid black;
+}
+
+.hp{
+    color: darkgoldenrod;
+}
+
+.galleryFlip {
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    
+  }
+  
+  .galleryInner {
+    transition: transform 30.0s;
+    transform-style: preserve-3d;
+  }
+  
+  .galleryFlip:hover .galleryInner {
+    transform: rotateY(4320deg);
+  }
+  
+        
+
+.footer {
+  background-color: #111;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+width: 100%;
+  bottom: 0px;
+  margin-top: 15px;
+  left:0px;
+  color: darkgoldenrod;
+  
+}
+
+.footer a{
+          color: darkgoldenrod;
+          }
+
+        
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+  
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border:2px solid yellow;
+    border-radius: 50%;
+      }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  
+  }
+  
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+      position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: darkgoldenrod;
+    border-radius: 100%;
+  
+  }
+  
+  /* Style the back side */
+.flip-card-back {
+    background-color: darkgoldenrod;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 100%;
+    
+   }
+
+
+/* dalam diagram */
+   .diagram {
+    display: grid;
+    /* "grid-template-columns" digunakan untuk mengatur jumlah dan ukuran kolom */
+    grid-template-columns: 200px 70px 70px 70px 70px 70px 70px 70px;
+    /* "grid-template-rows" digunakan untuk mengatur jumlah dan ukuran baris */
+    grid-template-rows: 0px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    width: 540px;
+    height: 390px;
+    margin: 30px;
+  }
+
+  .diagram2 {
+    display: grid;
+    /* "grid-template-columns" digunakan untuk mengatur jumlah dan ukuran kolom */
+    grid-template-columns:  150px 0px 0px 0px 160px 160px 160px;
+    /* "grid-template-rows" digunakan untuk mengatur jumlah dan ukuran baris */
+    grid-template-rows:  0px 50px 50px 50px 50px ;
+    width: 540x;
+    height: 400px;
+    margin: 20px;
+  }
+
+  
+  
+  /* .frekuensi2,
+  .balok2,
+  .data2 {
+    padding: 0;
+  } */
+  
+  .frekuensi1 {
+    grid-column: 1;
+    display:flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+  }
+  
+  .frekuensi1:not(:nth-child(12)) {
+    border-right: solid .2em #2c1544;
+  }
+
+  .frekuensi1:not(:nth-child(12)):after {
+    content: "";
+    display: block;
+    border-bottom: solid .2em #2c1544;
+    width: 0.3em;
+    transform: translateY(0.2em);
+  }
+
+ 
+
+
+  .frekuensi2 {
+    grid-column: 1;
+    display:flex;
+    align-items:flex-start;
+    justify-content: flex-end;
+    border-right: solid .2em #2c1544;
+  }
+  
+  /* .frekuensi2:not(:nth-child(9)) {
+    border-right: solid .2em #2c1544;
+  } */
+  
+  .frekuensi2:not(:nth-child(9)):after {
+    content: "";
+    display: block;
+    border-bottom: solid .2em #2c1544;
+    width: 0.3em;
+    transform: translateY(0.1em);
+     }
+  
+  .frekuensi2 span {
+    transform: translate(-0.2em, 0.5em);
+    /* background-color: blue; */
+  }
+  
+  .balok {
+grid-row: 2 / span 10;
+    /* background-color: red; */
+    margin: 0 10px;
+    display: flex;
+    align-self: flex-end;
+  }
+  /* mendatar*/
+  .data {
+    margin-left: -.2em;
+    border-top: solid .2em #2c1544;
+    /* grid-row: 12; */
+    text-align: center;
+  }
+
+  
+  
+  .balok.a,
+  .data.a {
+    grid-column: 2;
+  }
+  
+  .balok.b,
+  .data.b {
+    grid-column: 3;
+  }
+  
+  .balok.c,
+  .data.c {
+    grid-column: 4;
+  }
+  
+  .balok.d,
+  .data.d {
+    grid-column: 5;
+  }
+  
+  .balok.e,
+  .data.e {
+    grid-column: 6;
+  }
+  
+  .balok.f,
+  .data.f {
+    grid-column: 7;
+  }
+  
+  .balok.g,
+  .data.g {
+    grid-column: 8;
+  }
+  
+ 
+
+  /*  Atur Tinggi Balok */
+  /*   HTML */
+  #balok-a {
+    /* width: 75px; */
+    height: 80%;
+    background-color: rgb(113, 113, 243);
+  }
+  /* CSS */
+  #balok-b {
+    height: 90%;
+    background-color: rgb(96, 228, 96);
+  }
+  /* Excel */
+  #balok-c {
+    height: 80%;
+    background-color: rgb(226, 226, 125);
+  }
+  /* Gsheet */
+  #balok-d {
+    height: 70%;
+    background-color: rgb(238, 107, 107);
+  }
+  /* Gdocs */
+  #balok-e {
+    height: 70%;
+    background-color: rgb(179, 123, 231);
+  }
+  /* word */
+  #balok-f {
+    height: 95%;
+    background-color: rgb(245, 176, 128);
+  }
+  /* PPT */
+  #balok-g {
+    height: 85%;
+    background-color: rgb(149, 212, 149);
+  }
+
+  .data2n{grid-column: 5;}
+  .data2e{grid-column: 6;}
+  .data2w{grid-column: 7;}
+
+  .data2e, .data2w, .data2n {
+    
+    margin-left: -.2em;
+    margin-top: 200px;
+    border-top: solid .2em #2c1544;
+   /* grid-row: 2 / span 10; */
+    text-align: center;
+    
+  }
+
+
+  .blok g,
+  #datag {
+    grid-row: 4;
+    /* background-color: rgb(25, 120, 230); */
+  }
+
+  .blok c,
+  #datac {
+    grid-row:3;
+    /* background-color: rgb(204, 40, 149); */
+  }
+  
+  .blok b,
+  #datab {
+    grid-row: 2;
+    /* background-color: rgb(202, 245, 11); */
+  }
+
+  .blok m,
+  #datam {
+    grid-row: 5;
+    /* background-color: rgb(63, 6, 6); */
+  }
+
+  .blok {
+    grid-row: 0 / span 10;
+        /* background-color: red; */
+        /* margin: 0 10px; */
+        display: flex;
+        align-self: flex-start;
+        justify-self:flex-start;
+      }
+
+     
+
+#blok-g{ 
+    grid-row: 4; height: 50px; width: 400px;
+background-color: rgb(1, 250, 42);
+}
+#blok-m{ 
+    grid-row: 5; height: 50px; width: 300px;
+background-color: rgb(67, 248, 98);
+}
+#blok-c{
+    grid-row: 3; height: 50px; width: 480px;
+background-color: rgb(52, 255, 1);
+}
+#blok-b{
+    grid-row: 2; height: 50px; width: 400px;
+background-color: rgb(64, 250, 89);}
